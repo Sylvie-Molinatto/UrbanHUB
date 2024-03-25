@@ -13,10 +13,6 @@
     <p>
       <a href="#overview">Overview</a>
       </li> | <a href="#how-to-run">How to run the project</a>
-      </li> | <a href="#credentials">Credentials</a>
-      </li> | <a href="#frontend-documentation">Frontend Documentation</a>
-      </li> | <a href="#backend-documentation">Backend Documentation</a>
-      </li> | <a href="#database-documentation">Database Documentation</a>
       </li> | <a href="#contributors">Contributors</a>
     </p>
     <p>
