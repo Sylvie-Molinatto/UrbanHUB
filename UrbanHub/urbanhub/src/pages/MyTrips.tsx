@@ -201,7 +201,7 @@ function MyTrips(props: any) {
               centered
               items={new Array(3).fill(null).map((_, i) => {
                 const id = String(i + 1);
-                const tabLabel = id === '1' ? 'Past Trips' : id === '2' ? 'Ongoing trips' : 'Future trips';
+                const tabLabel = id === '1' ? 'Past Trips' : id === '2' ? 'Ongoing Trips' : 'Future Trips';
                 return {
                   label: <Flex align="middle" justify="center" style={{ width: '130px' }}><Text style={{ fontSize: '18px' }}>{tabLabel}</Text></Flex>,
                   key: id,
