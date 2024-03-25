@@ -1,0 +1,466 @@
+/************
+ * COMMON STYLES
+ ************/
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Override Ant Design Typography font family */
+:where(.css-dev-only-do-not-override-gzal6t)[class^="ant-typography"],
+:where(.css-dev-only-do-not-override-gzal6t)[class*=" ant-typography"] {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Style for the vertical scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hard-background-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+h1:where(.css-dev-only-do-not-override-gzal6t).ant-typography,
+h2:where(.css-dev-only-do-not-override-gzal6t).ant-typography,
+h3:where(.css-dev-only-do-not-override-gzal6t).ant-typography,
+h4:where(.css-dev-only-do-not-override-gzal6t).ant-typography,
+h5:where(.css-dev-only-do-not-override-gzal6t).ant-typography,
+h6:where(.css-dev-only-do-not-override-gzal6t).ant-typography {
+    font-weight: 400;
+}
+
+/************
+ * NAVBAR
+ ************/
+
+#navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: var(--hard-background-color);
+    color: whitesmoke;
+    min-height: 75px;
+    z-index: 1;
+}
+
+.header-style {
+    margin: 15px 20px 15px 20px;
+    border-radius: 20px;
+    position: sticky;
+    top: 15px;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    display:inline-flex;
+}
+
+.cover-style {
+    background-color: white;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 16px;
+}
+
+.userInfo {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+}
+
+/************
+ * FOOTER
+ ************/
+
+.footer-style {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 8px;
+    font-style: italic;
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/************
+ * CHATBOT
+ ************/
+
+.chatbot-style {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 10px;
+    font-style: italic;
+    padding-right: 2%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 0;
+    transition: transform 0.3s ease;
+}
+
+.chatbot-button:hover{
+    border: 1px solid #00AA70;
+    border-color: #00AA70;
+}
+
+/************
+* TRIP OVERVIEW
+************/
+
+.sidebar-div {
+    overflow: auto;
+    max-height: 65vh;
+}
+
+.map-space {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar-space {
+    flex: 0 0 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.body-space {
+    flex: 0 0 50%;
+    height: 100%;
+}
+
+.height-full {
+    height: 100%;
+}
+
+.span-container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.back-link{
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.back-link:hover,
+.back-link:hover .ant-typography{
+    color: #1a7aff !important;
+}
+
+.main-div {
+    min-height: calc(78vh - 30px);
+    position: relative;
+    margin-top: 20px;
+}
+
+.enterEditModeButton.menu-open{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.attractionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 130px;
+}
+
+@media (min-width: 1200px) {
+    .custom-container, .custom-container-md, .custom-container-sm {
+        max-width: 1100px !important;
+      }
+}
+
+.smallAttractionContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
+}
+
+.attractionImage {
+    margin-top: 5px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 150px;
+    object-fit:cover;
+    aspect-ratio: 3/2;
+    border-radius: 4%;
+}
+
+.attractionName {
+    margin-top: 10px;
+}
+
+.static-popover {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Adjust as needed */
+    max-width: 800px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the popover horizontally */
+}
+
+.content {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 10px 10px;
+    color: #555;
+    padding-left: 25px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.delete-button {
+    background: #ffffff; 
+    border-color: #d9d9d9;
+}
+.delete-button:hover {
+    border-color: #d12121; /* Change border color on hover */
+}
+
+.edit-button {
+    background: #ffffff; 
+    border-color: #d9d9d9;
+}
+
+.edit-button:hover {
+    border-color: #1677ff; /* Change border color on hover */
+}
+
+@media (max-width: 768px) {
+    .static-popover {
+      width: 100%; /* Full width on small screens */
+      flex-direction: column; /* Stack popover content vertically */
+    }
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: flex-end; /* Right-align buttons */
+    }
+}
+
+.enterEditModeButton{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.enterEditModeButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.time-picker-hide-footer .ant-picker-footer {
+    display: none;
+}
+
+.ant-form-item-explain-error {
+    font-size: small;
+}
+
+.read-more-link:hover a,
+.read-more-link:hover span{
+    color: #1a7aff !important;
+}
+
+/************
+ * MYTRIPS
+ ************/
+
+.ant-tabs-nav .ant-tabs-tab {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 14vw;
+}
+
+.city-image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/2;
+    overflow: hidden;
+  }
+  
+.city-image {
+    width: 100%;
+    aspect-ratio: 3/2;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+.gradient-overlay-bottom {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(245, 245, 245, 1));
+}
+
+.tripCard {
+    background-color: #ECF5E4;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tripCard.enlarged,
+.tripCard.enlarged:hover,
+.tripCard.enlarged .ant-dropdown-trigger:hover,
+.tripCard.enlarged .ant-dropdown-trigger:focus {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+  
+.tripCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-dropdown{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.button-new-trip{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.button-new-trip:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/************
+ * NEWTRIP
+ ************/
+
+.step-title{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.label{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.ant-input-number .ant-input-number-input{
+    width: 80px;
+    text-align: center;
+}
+
+.form-container {
+    border: 1px solid #d9d9d9; 
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    width: auto;
+}
+
+.input-container {
+    border: '1px solid #d9d9d9'; 
+    padding: '8px'; 
+    border-radius: '4px';
+}
+
+.ant-progress.ant-progress-status-success .ant-progress-bg{
+    background-color: #00AA70;
+}
+
+.summary-card{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.citiesMapMarkerHoveredContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    border-radius: 4%;
+    overflow: hidden;
+    border-color: white;
+    background-color: white;
+}
+
+.citiesMapMarkerHoveredImage{
+    margin-top: 5px;
+    width: 100%;
+    max-width: 100%;
+    height: 80%;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    border-radius: 4%;
+}
+
+.createTripButton{
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: white !important;
+    border-color: var(--hard-background-color) !important;
+    background-color: var(--hard-background-color) !important;
+}
+
+.createTripButton:not(:disabled):hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
