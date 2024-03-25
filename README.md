@@ -31,20 +31,20 @@
     <h2>Overview</h2>
     <p> UrbanHUB is a high-fidelity web application prototype aimed at optimizing the trip planning process using AI assistance. It offers users personalized route suggestions, attraction recommendations, and transportation options. While the AI implementation is simulated, the prototype demonstrates how AI can seamlessly integrate into the user experience, enhancing efficiency and satisfaction in creating customized itineraries. </p>
     <p>
-      <img src="./images/Home-1.png" alt="My Trips - 1" height="200">
+      <img src="./Images/Home-1.png" alt="My Trips - 1" height="200">
       <img src="./Images/Home-2.png" alt="My Trips - 2" height="200">
     </p>
     <p>
-      <img src="./images/Create-1.png" alt="Create Trip - 1" height="200">
-      <img src="./images/Create-2.png" alt="Create Trip - 2" height="200">
+      <img src="./Images/Create-1.png" alt="Create Trip - 1" height="200">
+      <img src="./Images/Create-2.png" alt="Create Trip - 2" height="200">
     </p>
     <p>
-      <img src="./images/Create-3.png" alt="Create Trip - 3" height="200">
-      <img src="./images/Create-4.png" alt="Create Trip - 4" height="200">
+      <img src="./Images/Create-3.png" alt="Create Trip - 3" height="200">
+      <img src="./Images/Create-4.png" alt="Create Trip - 4" height="200">
     </p>
     <p>
-      <img src="./images/Overview-1.png" alt="Trip Overview - 1" height="190">
-      <img src="./images/Overview-2.png" alt="Trip Overview - 2" height="190">
+      <img src="./Images/Overview-1.png" alt="Trip Overview - 1" height="190">
+      <img src="./Images/Overview-2.png" alt="Trip Overview - 2" height="190">
     </p>
   </div>
   <div id="how-to-run" align="left">
